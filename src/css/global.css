@@ -1,0 +1,30 @@
+:root {
+  --black-color: #111111;
+  --brown-color: #1e1823;
+  --orange-color: #fd9222;
+  --white-color: #fafafa;
+}
+
+.container {
+  padding-left: 15px;
+  padding-left: 15px;
+  outline: 1px solid tomato;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 365px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1166px;
+  }
+}
