@@ -47,7 +47,7 @@
 /* -------------------TABLET----------------------- */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 734px;
+    width: 734px;
   }
   .subscribe {
     padding: 72px 0;
@@ -95,9 +95,9 @@
     background-size: cover;
     background-position: center center;
   }
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    screen and (min-resolution: 192dpi) and (min-width: 768px),
-    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .subscribe {
       background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
         url('/img/subscribe/subcribe-desktop-2x.jpg');
