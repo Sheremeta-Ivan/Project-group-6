@@ -34,10 +34,11 @@
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
-  margin-bottom: 18px;
+  /* margin-bottom: 18px; */
 }
 
 .slider-item-title {
+  padding-top: 18px;
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 18px;
@@ -53,6 +54,8 @@
   text-align: center;
   letter-spacing: -0.02em;
   color: rgba(17, 17, 17, 0.7);
+  padding-left: 24px;
+  padding-right: 24px;
 }
 /* ------ */
 
