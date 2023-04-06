@@ -1,49 +1,58 @@
 .slider {
-  background-color: #ebe1d299;
+  background-color: var(--bg-main-color);
+  padding: 128px 128px;
 }
 
 .slider-container {
-  width: 886px;
+  width: 1136px;
 }
 
 .slider-title {
-  margin-bottom: 40px;
-  text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.17px;
+  text-align: center;
+  letter-spacing: -0.03em;
   text-transform: uppercase;
+  color: #fd9222;
+  margin-bottom: 50px;
 }
 
 .slider-list {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   text-align: center;
 }
-
+.slider-item {
+  background-color: var(--white-color);
+  width: 360px;
+  height: 200px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
+  border-radius: 15px;
+}
 .slider-item-img {
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .slider-item-title {
-  margin-bottom: 12px;
-  font-weight: 700;
+  margin-bottom: 24px;
+  font-weight: 600;
   font-size: 18px;
-  line-height: 1.22;
-}
-
-.slider-item-company {
-  margin-bottom: 40px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.33px;
+  text-align: center;
+  color: var(--black-color);
 }
 
 .slider-item-text {
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: rgba(17, 17, 17, 0.7);
 }
 /* ------ */
 
@@ -57,12 +66,14 @@
 .slider-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  background-color: var(--orange-color);
+  background-color: rgba(17, 17, 17, 0.1);
   opacity: 1;
 }
 
 .slider-pagination .swiper-pagination-bullet-active {
-  background-color: #06071b;
+  width: 28px;
+  height: 13px;
+  background-color: var(--orange-color);
 }
 
 /* .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
