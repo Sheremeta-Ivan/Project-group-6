@@ -1,0 +1,73 @@
+.slider {
+  background-color: #ebe1d299;
+}
+
+.slider-container {
+  width: 886px;
+}
+
+.slider-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.slider-list {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.slider-item-img {
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.slider-item-title {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+.slider-item-company {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.slider-item-text {
+  font-weight: 500;
+  line-height: 1.5;
+}
+/* ------ */
+
+.slider-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: var(--orange-color);
+  opacity: 1;
+}
+
+.slider-pagination .swiper-pagination-bullet-active {
+  background-color: #06071b;
+}
+
+/* .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 20px;
+  background-color: red;
+} */
