@@ -4,6 +4,7 @@
 .container {
 }
 .advantages-containeer {
+  padding: 50px 18px 50px 18px;
 }
 .visually-hidden {
   position: absolute;
@@ -30,6 +31,19 @@
   display: flex;
   align-items: flex-start;
   min-height: 244px;
+}
+.advantages-list-link:not(:last-child) {
+  width: 326px;
+}
+.advantages-list-link:not(:last-child):after {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  content: '';
+  width: 1px;
+  height: 124px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: translateY(-50%);
 }
 .advantages-icon-desc {
   display: flex;
