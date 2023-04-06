@@ -47,12 +47,37 @@
 /* -------------------TABLET----------------------- */
 @media screen and (min-width: 768px) {
   .container {
-    width: 734px;
+    max-width: 734px;
+  }
+  .subscribe {
+    padding: 72px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('/img/subscribe/subcribe-tablet.jpg');
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .subscribe {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('/img/subscribe/subcribe-tablet-2x.jpg');
+    }
   }
   .subscribe-title {
+    max-width: 378px;
     font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .subsribe-btn {
+  .subscribe-text {
+    max-width: 467px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .subscribe-btn {
     padding: 14px 40px;
     font-size: 18px;
   }
@@ -61,5 +86,24 @@
 @media screen and (min-width: 1200px) {
   .container {
     width: 1166px;
+  }
+  .subscribe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url('/img/subscribe/subcribe-desktop.jpg');
+    background-color: gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    .subscribe {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url('/img/subscribe/subcribe-desktop-2x.jpg');
+    }
+  }
+  .subscribe-title {
+    font-size: 24px;
   }
 }
