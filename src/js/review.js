@@ -1,14 +1,26 @@
+import Swiper from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   slidesPerView: 3,
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 28,
 
   pagination: {
     el: '.slider-pagination',
     clickable: true,
   },
-
+  mousewheel: {
+    sensitivity: 1,
+  },
+  loopedSlides: 3,
+  speed: 800,
+  //   effect: 'cube',
+  //   cubeEffect: {
+  //     slideShadows: true,
+  //     shadow: true,
+  //     shadowOffset: 10,
+  //     shadowScale: 0.94,
+  //   },
   // breakpoints: {
   //   768: {
   //     slidesPerView: 1,
