@@ -1,0 +1,156 @@
+:root {
+  --black-color: #111111;
+  --brown-color: #1e1823;
+  --orange-color: #fd9222;
+  --white-color: #ffffff;
+  --button-hover: #fcf1e0;
+  --bg-main-color: #fafafa;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-main-color);
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px solid tomato;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    width: 365px;
+  }
+
+  .backdrop__modal-leave-a-review {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 1;
+  }
+
+  .modal-leave-a-review {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    max-width: 311px;
+    max-height: 471px;
+    width: 90%;
+    height: 90%;
+
+    border-radius: 15px;
+
+    background-color: var(--bg-main-color);
+
+    transform: translate(-50%, -50%);
+
+    overflow-y: auto;
+  }
+
+  /* .backdrop__modal-leave-a-review.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  } */
+
+  .title__modal-leave-a-review {
+    margin-bottom: 32px;
+
+    width: 255px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: var(--black-color);
+  }
+
+  .title__modal-leave-a-review > span {
+    color: var(--orange-color);
+  }
+
+  .form-input__modal-leave-a-review {
+    padding: 14px 18px;
+    margin: 0;
+    width: 100%;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+
+    margin-bottom: 14px;
+
+    background-color: var(--bg-main-color);
+  }
+
+  .form-input__modal-leave-a-review::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: rgba(64, 64, 64, 0.3);
+  }
+
+  .button-submit__modal-leave-a-review {
+    background: #fd9222;
+    border-radius: 100px;
+    border: none;
+
+    width: 93px;
+    height: 41px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--white-color);
+  }
+  .button-close__modal-leave-a-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 14px;
+    right: 14px;
+
+    /* width: 24px;
+    height: 24px; */
+    padding: 8px;
+
+    fill: #000;
+    background-color: var(--bg-main-color);
+    border: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1166px;
+  }
+}
