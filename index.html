@@ -14,8 +14,8 @@
     <meta name="theme-color" content="#ffffff" />
     
     
-    <script type="module" crossorigin src="/Project-group-6/assets/index-cc22863f.js"></script>
-    <link rel="stylesheet" href="/Project-group-6/assets/index-19c6d0ff.css">
+    <script type="module" crossorigin src="/Project-group-6/assets/index-0d95ae6c.js"></script>
+    <link rel="stylesheet" href="/Project-group-6/assets/index-b1f4696e.css">
   </head>
   <body>
     <!-- Header -->
@@ -802,7 +802,66 @@
     <!-- /Buy now -->
 
     <!-- Leave a review about our chocolate -->
-    
+    <button
+  class="button-open__modal-leave-a-review"
+  type="button"
+  data-modal-leave-a-review-open-first
+>
+  Leave a review
+</button>
+
+<div class="backdrop__modal-leave-a-review is_hidden" data-modal-leave-a-review>
+  <div class="modal-leave-a-review">
+    <h1 class="title__modal-leave-a-review">
+      leave a review &nbsp; about <span>our chocolate</span>
+    </h1>
+    <form class="form__modal-leave-a-review" autocomplete="on">
+      <input
+        class="form-input__modal-leave-a-review"
+        type="text"
+        name="username"
+        placeholder="Name"
+      />
+
+      <input
+        class="form-input__modal-leave-a-review"
+        type="email"
+        name="email"
+        placeholder="Email"
+      />
+
+      <input
+        class="form-input__modal-leave-a-review"
+        type="tel"
+        name="tel"
+        placeholder="Phone number"
+      />
+
+      <textarea
+        class="form-input__modal-leave-a-review"
+        name="comment"
+        id="comment"
+        rows="5"
+        placeholder="Enter text"
+      ></textarea>
+
+      <button class="button-submit__modal-leave-a-review" type="submit">
+        Send
+      </button>
+    </form>
+
+    <button
+      type="button"
+      class="button-close__modal-leave-a-review"
+      data-modal-leave-a-review-close
+    >
+      <svg width="24" height="24">
+        <use href="../img/sprite.svg#icon-close-modal"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
     <!-- /Leave a review about our chocolate -->
 
     <!-- Explore our new chocolate first -->
