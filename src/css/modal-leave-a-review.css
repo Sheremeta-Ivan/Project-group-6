@@ -14,7 +14,7 @@ body {
 .container {
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
   width: 100%;
   margin: 0 auto;
 }
@@ -23,7 +23,18 @@ body {
   .container {
     width: 365px;
   }
+  .button-open__modal-leave-a-review {
+    width: 165px;
+    height: 41px;
 
+    border: 1px solid var(--orange-color);
+    border-radius: 100px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
   .backdrop__modal-leave-a-review {
     position: fixed;
     top: 0;
@@ -61,10 +72,10 @@ body {
     overflow-y: auto;
   }
 
-  /* .backdrop__modal-leave-a-review.is-hidden {
+  .backdrop__modal-leave-a-review.is_hidden {
     opacity: 0;
     pointer-events: none;
-  } */
+  }
 
   .title__modal-leave-a-review {
     margin-bottom: 32px;
