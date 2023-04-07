@@ -6,9 +6,14 @@ const mySwiper = new Swiper('.myswiper', {
   spaceBetween: 20,
 
   pagination: {
-    el: '.slider-pagination',
+    el: '.swiper-pagination',
     clickable: true,
   },
+  mousewheel: {
+    sensitivity: 1,
+  },
+  loopedSlides: 4,
+  speed: 800,
 
   // breakpoints: {
   //   768: {
