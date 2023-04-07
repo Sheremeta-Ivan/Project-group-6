@@ -1,4 +1,7 @@
 /* ========================mobile header========================= */
+html {
+    scroll-behavior: smooth;
+}
 .header-container,
 .header-navigation,
 .header-logo {
