@@ -1,0 +1,123 @@
+.mob-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    max-width: 220px;
+    height: 100%;
+    max-height: 812px;
+    background-color: var(--brown-color);
+    z-index: 2;
+    overflow-y: auto;
+    
+}
+
+.mob-menu-container {
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    
+}
+
+.btn-mob-menu-close {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    top: 20px;
+    right: 20px;
+    border-style: none;
+    background-color: transparent;
+}
+
+.btn-mob-menu-close-icon{
+    width: 32px;
+    height: 32px;
+    fill: var(--white-color);
+}
+
+
+.btn-mob-menu-close:is(:hover, :focus) .btn-mob-menu-close-icon{
+    fill: var(--orange-color);
+}
+
+
+.mob-menu-nav {
+    
+}
+
+.mob-menu-nav-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 136px;
+    margin-bottom: auto;
+    
+    
+    
+}
+
+.mob-menu-nav-item:not(:last-child) {
+    margin-bottom: 24px;
+    
+}
+
+.mob-menu-nav-item:last-child{
+    margin-bottom: 0;
+}
+
+.mob-menu-nav-link {
+    position: relative;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1em;
+    color: var(--white-color);
+}
+
+  .mob-menu-nav-link:hover{
+    color: var(--orange-color);
+  }  
+
+.mob-menu-social-media-list{
+    display: flex;
+    margin-top: 458px;
+    margin-right: auto;
+    
+   
+}
+
+.mob-menu-social-media-item {
+    
+}
+
+.mob-menu-social-media-link {
+    
+}
+
+.mob-menu-social-media-icon {
+    display: block;
+    width: 22px;
+    height: 20px;
+    fill: var(--white-color);
+}
+
+.mob-menu-social-media-link:is(:hover, :focus) .mob-menu-social-media-icon{
+    fill: var(--orange-color);
+}
+
+.current-link::after {
+    position: absolute;
+    content: " ";
+    display: block;
+    top: 24px;
+    left: 0;
+    bottom: 0;
+    width: 24px;
+    height: 4px;
+    background-color: var(--orange-color);
+    border-radius: 1px;
+    color: var(--orange-color);
+}
