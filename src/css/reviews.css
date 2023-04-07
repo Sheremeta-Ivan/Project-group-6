@@ -1,3 +1,4 @@
+@import 'swiper/css/bundle';
 .slider {
   background-color: var(--bg-main-color);
   padding: 128px 128px;
