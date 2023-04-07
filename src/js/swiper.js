@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-const swiper = new Swiper('.mySwiper', {
+const mySwiper = new Swiper('.myswiper', {
   // Optional parameters
   slidesPerView: 4,
   loop: true,
