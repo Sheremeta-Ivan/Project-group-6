@@ -5,6 +5,7 @@
 }
 
 .slider-container {
+  position: relative;
   width: 1136px;
 }
 
@@ -18,7 +19,9 @@
   color: #fd9222;
   margin-bottom: 50px;
 }
-
+.slider-title-accent {
+  color: var(--black-color);
+}
 .slider-list {
   margin-bottom: 50px;
   text-align: center;
@@ -32,14 +35,20 @@
   border-radius: 15px;
 }
 .slider-item-img {
+  position: absolute;
+  z-index: 100000;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
   border-radius: 50%;
-  object-fit: cover;
+  /* object-fit: cover; */
   margin: 0 auto;
   /* margin-bottom: 18px; */
 }
 
 .slider-item-title {
   padding-top: 18px;
+  margin-top: 56px;
   margin-bottom: 24px;
   font-weight: 600;
   font-size: 18px;
@@ -58,13 +67,28 @@
   padding-left: 24px;
   padding-right: 24px;
 }
+.reviews-btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--black-color);
+  padding: 14px 40px;
+  border: 1px solid #fd9222;
+  border-radius: 100px;
+  margin: 0 auto;
+  display: flex;
+  /* flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; */
+}
 /* ------ */
 
 .slider-pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 13px;
+  margin-bottom: 50px;
 }
 
 .slider-pagination .swiper-pagination-bullet {
@@ -75,8 +99,8 @@
 }
 
 .slider-pagination .swiper-pagination-bullet-active {
-  width: 28px;
-  height: 13px;
+  /* width: 28px;
+  height: 13px; */
   background-color: var(--orange-color);
 }
 
