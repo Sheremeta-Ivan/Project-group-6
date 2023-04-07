@@ -50,7 +50,7 @@
   .unique-components-set{
    display:flex;
    gap: 19px;
-   flex-wrap: row;
+   flex-wrap: wrap;
    padding-bottom: 128px;
   }
 .unique-components-title-one{
