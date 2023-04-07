@@ -7,18 +7,19 @@ html {
 .header-logo {
     display: flex;
 }
-.header-logo-svg,
-.header-logo-part {
+.header-logo-svg {
     margin-left: 4px;
 }
 
 .header-logo {
-    Font-style: italic;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.28;
-    letter-spacing: -3%;
     color: var(--black-color);
+}
+.header-logo-part {
+Font-style: italic;
+margin-right: 4px;
 }
 
   .header-mobile-button {
@@ -92,11 +93,9 @@ html {
 
 
 .header-link-anchor {
-    Font-style: medium;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.11;
-    letter-spacing: -3%;
     color: var(--black-color);
 }
 
@@ -153,7 +152,7 @@ html {
 .header-social-link:hover,
 .header-social-link:focus{
 filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
-fill: #FD9222;
+fill: var(--orange-color);
 }
 
 }
