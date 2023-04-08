@@ -23,6 +23,7 @@ letter-spacing: -0.02em;
 color: var(--white-color);
 }
 .footer-top-wrap {
+  padding-top: 32px;
     color: var(--white-color);
     display: flex;
     justify-content: space-between;
@@ -32,7 +33,7 @@ color: var(--white-color);
     font-style: normal;
 
   }
-  .footer-contac{
+  .footer-contact{
     margin-bottom: 14px;
     font-weight: 500;
     letter-spacing: normal;
@@ -42,7 +43,15 @@ color: var(--white-color);
     gap: 14px;
 
   }
+  .footer-address-item{
+    padding-bottom: 4px;
+  }
+  .footer-contact-list-mob-em{
 
+  }
+.footer-gap{
+  display: flex;
+}
   .footer-list-link{
     display: flex;
     height: 100%;
@@ -52,3 +61,21 @@ color: var(--white-color);
   .footer-list-link:is(:hover, :focus) {
     fill: var(--orange-color);}
 
+.footer-list{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.footer-link{
+  display: block;
+  font-weight: 500;
+  line-height: 1.14;
+  color: var(--white-color);
+}
+.line-4{
+  content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    bottom: 32px;
+}
