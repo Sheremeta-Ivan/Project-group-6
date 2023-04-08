@@ -7,7 +7,9 @@
     </button>
 
     <form class="buy-now-modal-form">
-      <p class="buy-now-modal-form-text">BUY&nbsp;<span>NOW</span></p>
+      <h2 class="buy-now-modal-form-text">
+        BUY&nbsp;<span class="buy-now-modal-form-text-span">NOW</span>
+      </h2>
       <ul class="buy-product-list">
         <li class="buy-product-list-item">
           <picture>
@@ -27,7 +29,7 @@
             />
             <img src="./img/modal-buy-now/buy-100g.jpg" alt="Chocolate" />
           </picture>
-          <span>200 g</span>
+          <span class="buy-product-list-item-description">100 g</span>
         </li>
         <li class="buy-product-list-item">
           <picture>
@@ -47,7 +49,7 @@
             />
             <img src="./img/modal-buy-now/buy-200g.jpg" alt="Chocolate" />
           </picture>
-          <span>200 g</span>
+          <span class="buy-product-list-item-description">200 g</span>
         </li>
         <li class="buy-product-list-item">
           <picture>
@@ -67,18 +69,18 @@
             />
             <img src="./img/modal-buy-now/buy-300g.jpg" alt="Chocolate" />
           </picture>
-          <span>200 g</span>
+          <span class="buy-product-list-item-description">300 g</span>
         </li>
       </ul>
 
+      <span class="buy-now-modal-form-input-description"
+        >Personal information
+      </span>
       <div class="personal-information-wrapper">
-        <span class="buy-now-modal-form-input-description"
-          >Personal information
-        </span>
         <label class="buy-now-modal-form-field">
           <span class="buy-now-modal-form-input-wrapper">
             <input
-              class="buy-now-modal-form-input"
+              class="buy-now-modal-form-input buy-now-modal-form-input-inf"
               type="text"
               name="user_name"
               required
@@ -92,7 +94,7 @@
         <label class="buy-now-modal-form-field">
           <span class="buy-now-modal-form-input-wrapper">
             <input
-              class="buy-now-modal-form-input"
+              class="buy-now-modal-form-input buy-now-modal-form-input-inf"
               type="text"
               name="user_surname"
               required
@@ -120,17 +122,23 @@
       <label class="buy-now-modal-form-field">
         <span class="buy-now-modal-form-input-description">Phone number </span>
         <span class="buy-now-modal-form-input-wrapper">
-          <svg class="buy-now-modal-form-input-icon" width="32" height="24">
-            <use href="./img/sprite.svg#icon-ukraine"></use>
-          </svg>
-          <span class="buy-now-modal-input-tel">+380</span>
+          <span class="buy-now-modal-input-tel">
+            <svg
+              class="buy-now-modal-form-input-icon-tel"
+              width="32"
+              height="24"
+            >
+              <use href="./img/sprite.svg#icon-ukraine"></use>
+            </svg>
+            +380</span
+          >
           <input
-            class="buy-now-modal-form-input"
+            class="buy-now-modal-form-input buy-now-modal-form-input-tel"
             type="tel"
             name="user_phone"
             required
-            pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xx-xx"
+            pattern="[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xx-xxx-xx-xx"
             placeholder="Phone number"
           />
         </span>
@@ -148,7 +156,11 @@
             title="xxxx-xxxx-xxxx-xxxx"
             placeholder="Enter card"
           />
-          <svg class="buy-now-modal-form-input-icon" width="30" height="18">
+          <svg
+            class="buy-now-modal-form-input-icon-card"
+            width="30"
+            height="18"
+          >
             <use href="./img/sprite.svg#icon-mastercard"></use>
           </svg>
         </span>
@@ -164,7 +176,7 @@
       </label>
 
       <button type="submit" class="buy-now-modal-form-submit" data-modal-close>
-        Send
+        Submit
       </button>
     </form>
   </div>
