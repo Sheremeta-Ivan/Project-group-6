@@ -13,6 +13,7 @@
     
 }
 
+
 .mob-menu-container {
     display: flex;
     align-items: center;
@@ -21,7 +22,6 @@
     width: 100%;
     height: 100%;
     padding: 20px;
-    
 }
 
 .btn-mob-menu-close {
@@ -122,3 +122,4 @@
     border-radius: 1px;
     color: var(--orange-color);
 }
+
