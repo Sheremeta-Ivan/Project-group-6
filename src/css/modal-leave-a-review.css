@@ -6,27 +6,13 @@
   --button-hover: #fcf1e0;
   --bg-main-color: #fafafa;
 }
-html {
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-main-color);
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  /* outline: 1px solid tomato; */
-  width: 100%;
-  margin: 0 auto;
-}
-
 @media screen and (min-width: 375px) {
-  .container {
-    width: 365px;
-  }
   .button-open__modal-leave-a-review {
     width: 165px;
     height: 41px;
@@ -57,13 +43,8 @@ body {
     top: 50%;
     left: 50%;
 
-    /* padding-right: 24px;
-    padding-left: 24px;
-    padding-top: 32px;
-    padding-bottom: 32px; */
-
     max-width: 311px;
-    max-height: 471px;
+    max-height: 482px;
     width: 90%;
     height: 90%;
 
@@ -83,13 +64,15 @@ body {
   } */
 
   .form__modal-leave-a-review {
-    padding: 24px;
-    margin-right: auto;
-    margin-left: auto;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 
-  .title__modal-leave-a-review {
-    /* margin-bottom: 32px; */
+  .title-mobile__modal-leave-a-review {
+    /* display: block; */
+
     margin-left: 24px;
     margin-right: 24px;
     margin-top: 32px;
@@ -106,8 +89,12 @@ body {
     color: var(--black-color);
   }
 
-  .title__modal-leave-a-review > span {
+  .title-mobile__modal-leave-a-review > span {
     color: var(--orange-color);
+  }
+
+  .title-tablet__modal-leave-a-review {
+    display: none;
   }
 
   .form-input__modal-leave-a-review {
@@ -127,21 +114,70 @@ body {
     overflow-x: hidden;
   }
 
+  .form-input__modal-leave-a-review:focus {
+    outline: 1.5px solid var(--orange-color);
+  }
+
   .form-input__modal-leave-a-review::placeholder {
     font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 17px;
 
-    display: flex;
-    align-items: center;
     letter-spacing: -0.02em;
 
     color: rgba(64, 64, 64, 0.3);
   }
 
-  textarea {
+  textarea.form-input__modal-leave-a-review {
     resize: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    margin-bottom: 18px;
+    margin-top: 14px;
+
+    height: 100%;
+    max-height: 92px;
+  }
+
+  .form-input__modal-leave-a-review.phone-code {
+    padding-left: 106px;
+    margin-bottom: 0;
+  }
+
+  .container-phone-code {
+    position: relative;
+  }
+
+  .icon-phone-code {
+    position: absolute;
+
+    z-index: 999;
+
+    top: 50%;
+    left: 18px;
+
+    transform: translateY(-50%);
+  }
+
+  .label-phone-code {
+    position: absolute;
+
+    top: 50%;
+    left: 50px;
+
+    transform: translateY(-50%);
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    letter-spacing: -0.02em;
+
+    color: var(--black-color);
+
+    padding-right: 8px;
+
+    border-right: 2px solid rgba(64, 64, 64, 0.3);
   }
 
   .button-submit__modal-leave-a-review {
@@ -169,10 +205,6 @@ body {
     top: 14px;
     right: 14px;
 
-    /* width: 24px;
-    height: 24px; */
-    padding: 8px;
-
     fill: #000;
     background-color: var(--bg-main-color);
     border: none;
@@ -185,10 +217,94 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
+  .modal-leave-a-review {
+    max-width: 516px;
+    max-height: 576px;
+  }
+
+  .form__modal-leave-a-review {
+    padding: 40px;
+  }
+
+  .title-mobile__modal-leave-a-review {
+    display: none;
+  }
+
+  .title-tablet__modal-leave-a-review {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+
+    width: 255px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+
+    color: var(--black-color);
+  }
+
+  .title-tablet__modal-leave-a-review > span {
+    color: var(--orange-color);
+  }
+
+  .button-close__modal-leave-a-review {
+    top: 24px;
+    right: 24px;
+  }
+
+  .form-input__modal-leave-a-review {
+    max-width: 437px;
+
+    padding: 22px 24px;
+
+    border-radius: 13px;
+
+    margin-bottom: 19px;
+  }
+
+  .form-input__modal-leave-a-review::placeholder {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .label-phone-code {
+    display: flex;
+
+    align-items: center;
+
+    height: 32px;
+
+    font-size: 18px;
+    line-height: 22px;
+
+    padding-right: 32px;
+
+    left: 74px;
+  }
+
+  .form-input__modal-leave-a-review.phone-code {
+    padding-left: 177px;
+  }
+
+  textarea.form-input__modal-leave-a-review {
+    margin-top: 19px;
+    margin-bottom: 18px;
+  }
+  .icon-phone-code {
+    left: 24px;
+  }
+
+  .button-submit__modal-leave-a-review {
+    width: 117px;
+    height: 45px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1166px;
