@@ -104,8 +104,8 @@
   color: var(--orange-color);
   background-color: var(--button-hover);
 }
-.hero-How-its-made:hover,
-.hero-How-its-made:focus {
+.hero-how-its-made:hover,
+.hero-how-its-made:focus {
   color: var(--orange-color);
   border: 1px solid var(--orange-color);
   background-color: var(--white-color);

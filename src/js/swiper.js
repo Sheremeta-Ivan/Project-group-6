@@ -3,12 +3,17 @@ const mySwiper = new Swiper('.myswiper', {
   // Optional parameters
   slidesPerView: 4,
   loop: true,
-  spaceBetween: 20,
+  spaceBetween: 18,
 
   pagination: {
-    el: '.slider-pagination',
+    el: '.swiper-pagination',
     clickable: true,
   },
+  // mousewheel: {
+  //   sensitivity: 2,
+  // },
+  // loopedSlides: 4,
+  // speed: 800,
 
   // breakpoints: {
   //   768: {
