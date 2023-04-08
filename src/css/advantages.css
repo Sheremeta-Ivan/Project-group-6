@@ -4,11 +4,7 @@
   padding-bottom: 50px;
   background-color: var(--brown-color);
 }
-.container {
-}
-.advantages-containeer {
-  padding: 50px 18px 50px 18px;
-}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -21,13 +17,53 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+@media screen and (min-width: 375px) {
+  .container {
+    width: 365px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 734px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1166px;
+  }
+}
+.advantages-containeer {
+  padding: 20px 0px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-containeer {
+    padding: 50px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-containeer {
+    padding: 50px 18px 50px 18px;
+  }
+}
 .advantages-list {
   display: flex;
-  align-items: center;
-  gap: 70px;
+  flex-direction: column;
+  gap: 20px;
 }
-.advantages-content {
-  width: 308px;
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+  }
 }
 .advantages-list-link {
   position: relative;
@@ -35,17 +71,37 @@
   align-items: flex-start;
   min-height: 244px;
 }
-.advantages-list-link:not(:last-child) {
-  width: 326px;
+.advantages-list-link:last-child {
+  min-height: 225px;
 }
-.advantages-list-link:not(:last-child):after {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  content: '';
-  height: 124px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transform: translateY(-50%);
+@media screen and (min-width: 768px) {
+  .advantages-list-link:last-child {
+    min-height: 244px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantages-list-link:not(:last-child) {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list-link:not(:last-child) {
+    width: 326px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-list-link:not(:last-child):after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    content: '';
+    height: 124px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    transform: translateY(-50%);
+  }
+}
+.advantages-content {
+  width: 308px;
 }
 .advantages-icon-desc {
   display: flex;
