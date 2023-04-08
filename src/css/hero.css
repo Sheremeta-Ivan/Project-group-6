@@ -47,28 +47,20 @@
 @keyframes anim-description {
   0% {
     opacity: 0;
-    transform: rotate(60deg);
+    transform: translateX(100%);
   }
   20% {
     opacity: 0;
-    transform: rotate(180deg);
   }
   50% {
     opacity: 1;
-    transform: rotate(360deg);
   }
   100% {
     opacity: 1;
-    transform: rotate(360deg);
+    transform: translateX(0%);
   }
 }
-.hero-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 14px;
-  margin-bottom: 32px;
-}
+
 .hero-btn {
   font-family: inherit;
   cursor: pointer;
@@ -87,6 +79,7 @@
 .hero-how-its-made {
   background-color: transparent;
   border: 1px solid var(--white-color);
+  margin-left: 14px;
 }
 .hero-scroll-down {
   font-weight: 500;
@@ -147,7 +140,7 @@
     max-width: 335px;
   }
   .hero-container {
-    max-width: 299px;
+    max-width: 325px;
   }
   .hero-buy-now {
     margin: 0;
@@ -155,7 +148,7 @@
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    max-width: 624px;
+    max-width: 654px;
     padding: 0 40px;
   }
   .hero {
@@ -205,8 +198,7 @@
 @media screen and (min-width: 1200px) {
   /* Колонки */
   .hero-container {
-    max-width: 1056px;
-    padding: 0 40px;
+    max-width: 1086px;
   }
   .hero {
     margin-bottom: 72px;
