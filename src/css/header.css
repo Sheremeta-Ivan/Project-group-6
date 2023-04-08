@@ -1,58 +1,101 @@
-@media screen and (min-width: 375px) {
-    .container {
-        width: 365px;
-    }
+/* ========================mobile header========================= */
+html {
+    scroll-behavior: smooth;
 }
-
-@media screen and (min-width: 768px) {
-    .container {
-        width: 734px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 1166px;
-    }
-}
-
-
 .header-container,
 .header-navigation,
-.header-logo,
-.header-list-anchor,
-.header-social-list  {
+.header-logo {
     display: flex;
 }
-
-.social-footer-icon {
-    width: 24px;
-}
-
 .header-logo-svg {
     margin-left: 4px;
 }
 
 .header-logo {
-Font-style: Italic;
-font-weight: 700;
-    font-size: 18px;
-    line-height: 1.11;
-    letter-spacing: -3%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
     color: var(--black-color);
 }
-
 .header-logo-part {
-    Font-style: Bold;
+Font-style: italic;
+margin-right: 4px;
+}
+
+  .header-mobile-button {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      line-height: 0;
+  }
+
+  .header-navigation {
+    margin-top: auto;
+  }
+
+
+@media screen and (min-width: 375px) {
+    .container {
+        width: 365px;
+    }
+
+     .header-container {
+       padding-top: 17px;
+       padding-bottom: 17px;
+    }
+
+    .header-social-list,
+    .header-list-anchor {
+        display: none;
+    }
+
+    .header-mobile-button-burger {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header-logo-svg {
+        width: 21px;
+        height: 21px;
+    }
+}
+
+/* =========================tablet header========================= */
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 734px;
+    }
+
+     .header-container {
+       padding-top: 24px;
+       padding-bottom: 24px;
+    }
+
+    .header-mobile-button-burger {
+        width: 32px;
+        height: 32px;
+    }
+
+       
+
 
 }
 
+/* ========================desctop header========================  */
+
+
+.social-footer-icon {
+    width: 24px;
+}
+
+
+
+
 .header-link-anchor {
-    Font-style: Medium;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.11;
-    letter-spacing: -3%;
     color: var(--black-color);
 }
 
@@ -65,16 +108,56 @@ font-weight: 700;
     justify-content: space-between;
 }
 
+.header-social-list {
+    gap: 18px;
+}
+
 @media screen and (min-width: 1200px) {
+    .container {
+            width: 1166px;
+        }
+
+         .header-logo-svg {
+        width: 24px;
+        height: 24px;
+    }
+
     .header-container {
-       padding-top: 24px;
        padding-bottom: 32px;
     }
 
     .header-mobile-button{
         display: none;
     }
+
+    .header-logo {
+    font-size: 18px;
+    line-height: 1.11;
+  
 }
+
+.header-list-anchor,
+.header-social-list {
+    display: flex;
+}
+
+  .header-link-anchor:hover,
+  .header-link-anchor:focus,
+  .header-logo:hover,
+  .header-logo:focus {
+      filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+  }
+
+
+.header-social-link:hover,
+.header-social-link:focus{
+filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+fill: var(--orange-color);
+}
+
+}
+
+
 
 
  

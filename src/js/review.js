@@ -1,3 +1,4 @@
+import Swiper from 'swiper/bundle';
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   slidesPerView: 3,
