@@ -30,6 +30,9 @@
     background-size: cover;
   }
 }
+.hero-list {
+  margin-bottom: 32px;
+}
 .hero-container {
   max-width: 244px;
   padding: 0 20px 0 16px;
@@ -79,7 +82,6 @@
 .hero-how-its-made {
   background-color: transparent;
   border: 1px solid var(--white-color);
-  margin-left: 14px;
 }
 .hero-scroll-down {
   font-weight: 500;
@@ -186,6 +188,9 @@
   .hero-list-btn {
     display: flex;
     justify-content: space-between;
+  }
+  .hero-how-its-made {
+    margin-left: 14px;
   }
   .hero-btn {
     padding: 14px 40px;
