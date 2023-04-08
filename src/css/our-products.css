@@ -1,4 +1,7 @@
 @import 'swiper/css/bundle';
+.slider-container{
+  width: 1136px;
+}
 .products-title-section {
   font-weight: 600;
   font-size: 24px;
@@ -14,6 +17,7 @@
 }
 .swiper-list{
   margin-bottom: 55px;
+  /* text-align: center; */
 }
 .swiper-item {
   display: flex;
@@ -21,7 +25,6 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  max-width: 267px;
   background: var(--white-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -54,8 +57,6 @@
   color: var(--black-color);
   text-align: center;
 }
-
-/* Styles for container */
 
 .swiper-pagination {
   display: flex;
