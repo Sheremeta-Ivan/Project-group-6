@@ -177,7 +177,13 @@ body {
     background-color: var(--bg-main-color);
     border: none;
   }
+  .backdrop__modal-leave-a-review.is_hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 734px;
