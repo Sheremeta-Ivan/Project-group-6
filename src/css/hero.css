@@ -4,7 +4,7 @@
   margin-right: auto;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 72px;
+  margin-bottom: 71px;
   background-size: cover;
   background-color: var(--white-color);
   padding: 395px 0 21px 0;
@@ -14,7 +14,7 @@
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(../img/hero/hero-background-mobail1x.jpg);
+    url(/img/hero/hero-background-mobail1x.jpg);
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -26,7 +26,7 @@
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(../img/hero/hero-background-mobail@2x.jpg);
+      url(/img/hero/hero-background-mobail@2x.jpg);
     background-size: cover;
   }
 }
@@ -42,13 +42,25 @@
   color: var(--white-color);
   max-width: 299px;
   margin-bottom: 32px;
+  animation: 8s anim-description ease-out;
 }
-.hero-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 14px;
-  margin-bottom: 32px;
+@keyframes anim-description {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
+
 .hero-btn {
   font-family: inherit;
   cursor: pointer;
@@ -62,10 +74,12 @@
 }
 .hero-buy-now {
   background-color: var(--orange-color);
+  margin: 32px;
 }
 .hero-how-its-made {
   background-color: transparent;
   border: 1px solid var(--white-color);
+  margin-left: 14px;
 }
 .hero-scroll-down {
   font-weight: 500;
@@ -121,18 +135,24 @@
 
 @media screen and (min-width: 375px) {
   .hero {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 335px;
   }
   .hero-container {
-    max-width: 299px;
+    max-width: 325px;
+  }
+  .hero-buy-now {
+    margin: 0;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-container {
-    max-width: 624px;
+    max-width: 654px;
     padding: 0 40px;
   }
   .hero {
+    margin-bottom: 50px;
     max-width: 704px;
     padding: 671px 0 40px;
     background-image: linear-gradient(
@@ -178,10 +198,10 @@
 @media screen and (min-width: 1200px) {
   /* Колонки */
   .hero-container {
-    max-width: 1056px;
-    padding: 0 40px;
+    max-width: 1086px;
   }
   .hero {
+    margin-bottom: 72px;
     max-width: 1136px;
     padding: 381px 0 40px 0;
     background-image: linear-gradient(
