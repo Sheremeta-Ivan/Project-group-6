@@ -8,15 +8,21 @@
     <div class="hero-list-btn">
       <ul class="hero-list">
         <li class="hero-item">
-          <button type="button" class="hero-buy-now hero-btn">Buy now</button>
+          <button type="button" data-modal-open class="hero-buy-now hero-btn">
+            Buy now
+          </button>
         </li>
         <li class="hero-item">
-          <button type="button" class="hero-how-its-made hero-btn">
+          <button
+            type="button"
+            onClick="GoUrl"
+            class="hero-how-its-made hero-btn"
+          >
             How it’s made
           </button>
         </li>
       </ul>
-      <button type="button" class="hero-scroll-down">
+      <button type="button" class="hero-scroll-down btn">
         scroll down
         <span class="hero-link-icon">
           <svg width="22" height="22" class="hero-icon">
@@ -27,3 +33,18 @@
     </div>
   </div>
 </section>
+<script type="text/javascript">
+  function GoUrl(url) {
+    location.href = url;
+  }
+</script>
+<script>
+  var hiddenElement = document.getElementById('box');
+  var btn = document.querySelector('.btn');
+
+  function handleButtonClick() {
+    hiddenElement.scrollIntoView({ block: 'center', behavior: 'smooth' });
+  }
+
+  btn.addEventListener('click', handleButtonClick);
+</script>
