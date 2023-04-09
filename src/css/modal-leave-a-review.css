@@ -36,6 +36,8 @@ body {
     background-color: rgba(46, 47, 66, 0.4);
 
     opacity: 1;
+
+    z-index: 999;
   }
 
   .modal-leave-a-review {
@@ -56,12 +58,14 @@ body {
 
     overflow-y: hidden;
     overflow-x: hidden;
+
+    z-index: 9999;
   }
 
-  /* .backdrop__modal-leave-a-review.is_hidden {
+  .backdrop__modal-leave-a-review.is_hidden {
     opacity: 0;
     pointer-events: none;
-  } */
+  }
 
   .form__modal-leave-a-review {
     padding-right: 24px;
@@ -194,6 +198,13 @@ body {
 
     color: var(--white-color);
   }
+
+  .button-submit__modal-leave-a-review:hover {
+    background-color: var(--button-hover);
+    color: var(--orange-color);
+
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
   .button-close__modal-leave-a-review {
     display: flex;
     align-items: center;
@@ -209,6 +220,13 @@ body {
     background-color: var(--bg-main-color);
     border: none;
   }
+
+  .button-close__modal-leave-a-review:hover {
+    fill: var(--orange-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
   .backdrop__modal-leave-a-review.is_hidden {
     opacity: 0;
     visibility: hidden;
@@ -306,7 +324,18 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1166px;
+  .modal-leave-a-review {
+    max-height: 630px;
+  }
+
+  .title-tablet__modal-leave-a-review {
+    font-size: 24px;
+    line-height: 28px;
+
+    width: 298px;
+  }
+  textarea.form-input__modal-leave-a-review {
+    max-height: 136px;
+    height: 100%;
   }
 }

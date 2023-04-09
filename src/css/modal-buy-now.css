@@ -17,6 +17,10 @@
 }
 
 .buy-now-modal {
+  width: 310px;
+}
+
+.buy-now-modal {
   box-sizing: border-box;
   position: absolute;
   left: 50%;
@@ -24,25 +28,22 @@
   transform: translate(-50%, -50%);
   background: var(--bg-main-color);
   border-radius: 15px;
-  padding: 48px;
-  width: 610px;
+  padding: 32px 24px;
 }
 
 .buy-now-modal-close-button {
   position: absolute;
-  right: 31px;
-  top: 31px;
+  right: 14px;
+  top: 14px;
   background-color: transparent;
   display: flex;
-  padding: 13px;
-  width: 38px;
-  height: 38px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   border: none;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color var(--transition-dur-bezier);
 }
 
 .buy-now-modal-close-button-icon {
@@ -65,8 +66,8 @@
 
 .buy-now-modal-form-text {
   font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -80,28 +81,28 @@
 
 .buy-product-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   margin-bottom: 40px;
 }
 
 .buy-product-list-item {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 14px;
-  padding: 24px 20px 18px;
-  width: 160px;
-  height: 196px;
+  padding: 8px 16px;
+  width: 100%;
   background: var(--white-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
 }
 
 .buy-product-list-item-description {
-  padding: 8px 29px;
+  display: block;
+  margin-bottom: 8px;
+  padding: 6px 16px;
   background-color: var(--bg-main-color);
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 100px;
@@ -114,57 +115,58 @@
     color var(--transition-dur-bezier);
 }
 
-.buy-product-list-item-description:is(:hover, :focus) {
-  background-color: var(--button-hover);
-}
-
 .personal-information-wrapper {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 14px;
+  margin: 8px 0 18px;
 }
 
 .buy-now-modal-form-input-description {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.29;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: -0.02em;
   color: var(--black-color);
+}
+
+@media screen and (max-width: 768px) {
+  .buy-now-modal-form-field {
+    width: 100%;
+  }
 }
 
 .buy-now-modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin: 8px 0 18px;
   padding: 0;
+  margin: 8px 0 18px;
 }
 
 .buy-now-modal-form-input {
-  padding: 22px 24px;
+  padding: 14px 18px;
   background-color: var(--bg-main-color);
   border: 1.5px solid rgba(17, 17, 17, 0.05);
-  border-radius: 13px;
+  border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--brown-color);
   transition: all var(--transition-dur-bezier);
-}
-
-.buy-now-modal-form-input-inf {
-  width: 246px;
 }
 
 .buy-now-modal-form-input::placeholder {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
   transition: all var(--transition-dur-bezier);
@@ -177,7 +179,7 @@
 }
 
 .buy-now-modal-form-input-tel {
-  padding-left: 177px;
+  padding-left: 106px;
 }
 
 .buy-now-modal-input-tel {
@@ -186,57 +188,60 @@
   justify-content: center;
   align-items: center;
   top: 50%;
-  left: 24px;
+  left: 18px;
   transform: translate(0%, -50%);
 }
 
 .buy-now-modal-form-input-icon-tel {
-  margin-right: 18px;
+  margin-right: 8px;
+  width: 24px;
+  height: 18px;
 }
 
 .buy-now-modal-input-tel::after {
   content: '';
   display: block;
-  width: 3px;
-  height: 32px;
+  width: 1px;
+  height: 25px;
   background-color: rgba(64, 64, 64, 0.1);
   position: absolute;
   top: 50%;
-  left: 125px;
+  left: 74px;
   transform: translate(0%, -50%);
+}
+
+.buy-now-modal-input-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--black-color);
 }
 
 .buy-now-modal-form-input-icon-card {
   position: absolute;
+  width: 22px;
+  height: 13px;
   top: 50%;
   right: 10px;
   transform: translate(-50%, -50%);
 }
 
-.buy-now-modal-input-tel {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  letter-spacing: -0.02em;
-  color: var(--black-color);
-}
-
 .buy-now-modal-form-message {
   resize: none;
   width: 100%;
-  height: 120px;
-  padding: 22px 24px;
-  height: 137px;
+  padding: 14px 18px;
+  height: 91px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   background-color: var(--bg-main-color);
-  border-radius: 13px;
+  border-radius: 8px;
   box-sizing: border-box;
   margin: 8px 0 18px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--brown-color);
   transition: all var(--transition-dur-bezier);
@@ -246,8 +251,8 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
   transition: color var(--transition-dur-bezier);
@@ -261,12 +266,12 @@
 
 .buy-now-modal-form-submit {
   align-items: flex-start;
-  padding: 14px 40px;
-  gap: 14px;
-  width: 133px;
-  height: 45px;
+  padding: 12px 28px;
+  width: 109px;
   background: var(--orange-color);
   border-radius: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -278,4 +283,137 @@
 .buy-now-modal-form-submit:is(:hover, :focus) {
   background: var(--button-hover);
   color: var(--orange-color);
+}
+
+/* ***********************Tablet*************************** */
+
+@media screen and (min-width: 768px) {
+  .buy-now-modal {
+    width: 609px;
+    padding: 48px;
+  }
+
+  .buy-now-modal-close-button {
+    right: 17px;
+    top: 17px;
+    width: 38px;
+    height: 38px;
+    transition: background-color var(--transition-dur-bezier);
+  }
+
+  .buy-now-modal-form-text {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+
+  .buy-product-list {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  .buy-product-list-item {
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px 20px 18px;
+    width: 160px;
+  }
+
+  .buy-product-list-item-description {
+    padding: 8px 29px;
+  }
+
+  .buy-product-list-item-description:is(:hover, :focus) {
+    background-color: var(--button-hover);
+  }
+
+  .personal-information-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .buy-now-modal-form-input-description {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .buy-now-modal-form-input-inf {
+    width: 246px;
+  }
+
+  .buy-now-modal-form-input {
+    padding: 22px 24px;
+    border-radius: 13px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .buy-now-modal-form-input::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+    transition: all var(--transition-dur-bezier);
+  }
+
+  .buy-now-modal-form-input-tel {
+    padding-left: 177px;
+  }
+
+  .buy-now-modal-input-tel {
+    left: 24px;
+  }
+
+  .buy-now-modal-form-input-icon-tel {
+    margin-right: 18px;
+    width: 34px;
+    height: 24px;
+  }
+
+  .buy-now-modal-input-tel::after {
+    width: 3px;
+    height: 32px;
+    left: 125px;
+  }
+
+  .buy-now-modal-input-tel {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .buy-now-modal-form-input-icon-card {
+    width: 30px;
+    height: 18px;
+  }
+
+  .buy-now-modal-form-message {
+    padding: 22px 24px;
+    height: 137px;
+    border-radius: 13px;
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .buy-now-modal-form-message::placeholder {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+
+  .buy-now-modal-form-message:focus {
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: var(--orange-color);
+  }
+
+  .buy-now-modal-form-submit {
+    padding: 14px 40px;
+    width: 133px;
+  }
+
+  .buy-now-modal-form-submit:is(:hover, :focus) {
+    background: var(--button-hover);
+    color: var(--orange-color);
+  }
 }

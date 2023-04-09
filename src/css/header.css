@@ -35,9 +35,6 @@ margin-right: 4px;
 
 
 @media screen and (min-width: 375px) {
-    .container {
-        width: 365px;
-    }
 
      .header-container {
        padding-top: 17px;
@@ -65,9 +62,6 @@ margin-right: 4px;
 /* =========================tablet header========================= */
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 734px;
-    }
 
      .header-container {
        padding-top: 24px;
@@ -115,9 +109,6 @@ margin-right: 4px;
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-            width: 1166px;
-        }
 
          .header-logo-svg {
         width: 24px;
