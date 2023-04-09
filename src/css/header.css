@@ -38,26 +38,32 @@ margin-right: 4px;
         height: 28px;
     }
 
-
-@media screen and (min-width: 375px) {
-
-     .header-container {
-       padding-top: 17px;
-       padding-bottom: 17px;
-    }
-
-    .header-social-list,
+       .header-social-list,
     .header-list-anchor {
         display: none;
         
-
     }
 
-    .header-logo-svg {
+        .header-container {
+            justify-content: space-between;
+        }
+
+              .header-logo-svg {
         width: 21px;
         height: 21px;
     }
+
+
+@media screen and (min-width: 375px) {
+
+    .header-container {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
+
 }
+
 
 /* =========================tablet header========================= */
 
@@ -100,9 +106,7 @@ margin-right: 4px;
     margin-left: 188px;
 }
 
-.header-container {
-    justify-content: space-between;
-}
+
 
 .header-social-list {
     gap: 18px;
