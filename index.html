@@ -38,8 +38,8 @@
       referrerpolicy="no-referrer"
     />
     
-    <script type="module" crossorigin src="/Project-group-6/assets/index-a456ae87.js"></script>
-    <link rel="stylesheet" href="/Project-group-6/assets/index-18851724.css">
+    <script type="module" crossorigin src="/Project-group-6/assets/index-73e31189.js"></script>
+    <link rel="stylesheet" href="/Project-group-6/assets/index-324502f0.css">
   </head>
   <body>
     <!-- Header -->
@@ -977,11 +977,15 @@
     <h1 class="title-tablet__modal-leave-a-review">
       leave a review about <span>our chocolate</span>
     </h1>
-    <form class="form__modal-leave-a-review" autocomplete="on">
+    <form
+      class="form__modal-leave-a-review"
+      autocomplete="on"
+      id="modal-leave-a-review"
+    >
       <input
         class="form-input__modal-leave-a-review"
         type="text"
-        name="username"
+        name="username__modal-leave-a-review"
         placeholder="Name"
         pattern="[a-zA-Zа-яА-ЯІіЇїЄєҐґ'-]+"
       />
@@ -989,7 +993,7 @@
       <input
         class="form-input__modal-leave-a-review"
         type="email"
-        name="email"
+        name="email__modal-leave-a-review"
         placeholder="Email"
         pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
       />
@@ -1002,7 +1006,7 @@
         <input
           class="form-input__modal-leave-a-review phone-code"
           type="tel"
-          name="tel"
+          name="tel__modal-leave-a-review"
           id="tel"
           placeholder="Phone number"
           pattern="\d{9}"
@@ -1011,13 +1015,18 @@
 
       <textarea
         class="form-input__modal-leave-a-review"
-        name="comment"
+        name="comment__modal-leave-a-review"
         id="comment"
         rows="5"
         placeholder="Enter text"
       ></textarea>
 
-      <button class="button-submit__modal-leave-a-review" type="submit">
+      <button
+        class="button-submit__modal-leave-a-review"
+        type="submit"
+        id="submitButton"
+        disabled
+      >
         Send
       </button>
     </form>
@@ -1027,7 +1036,7 @@
       class="button-close__modal-leave-a-review"
       data-modal-leave-a-review-close
     >
-      <svg width="24" height="24">
+      <svg class="button-close-x" width="24" height="24">
         <use href="/Project-group-6/assets/sprite-216f255f.svg#icon-close-modal"></use>
       </svg>
     </button>
