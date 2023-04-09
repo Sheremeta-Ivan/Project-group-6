@@ -33,31 +33,31 @@ margin-right: 4px;
     margin-top: auto;
   }
 
-
-@media screen and (min-width: 375px) {
-
-     .header-container {
-       padding-top: 17px;
-       padding-bottom: 17px;
-    }
-
-    .header-social-list,
-    .header-list-anchor {
-        display: none;
-        
-
-    }
-
-    .header-mobile-button-burger {
+      .header-mobile-button-burger {
         width: 28px;
         height: 28px;
     }
 
-    .header-logo-svg {
+       .header-social-list,
+    .header-list-anchor {
+        display: none;
+        
+    }
+
+        .header-container {
+            justify-content: space-between;
+        }
+
+              .header-logo-svg {
         width: 21px;
         height: 21px;
     }
-}
+
+       .header-container {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
 
 /* =========================tablet header========================= */
 
@@ -100,9 +100,7 @@ margin-right: 4px;
     margin-left: 188px;
 }
 
-.header-container {
-    justify-content: space-between;
-}
+
 
 .header-social-list {
     gap: 18px;
