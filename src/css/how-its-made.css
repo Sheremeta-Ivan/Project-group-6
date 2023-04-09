@@ -27,8 +27,11 @@
 
 .him-video[poster]{
   object-fit: cover;
+  border-radius: 15px;
   
 }
+
+
 
 .him-video {
       display: block;
@@ -74,6 +77,7 @@
 
 .him-item {
   margin-bottom: 24px;
+  margin-left: 14px;
 }
 
 .him-item:last-child {
@@ -110,6 +114,17 @@
     }
 
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .him-video {
+            background-image: url('../img/how-its-made/vid-cover-mob@2x.jpg');
+          }
+        }
+
+
+
         .him-list {
             display: flex;
             align-items: flex-start;
@@ -142,21 +157,33 @@
         max-height: 400px;
     }
 
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .him-video {
+            background-image: url('../img/how-its-made/vid-cover-tablet@2x.jpg');
+          }
+        }
+
+
     .him-list{
         display: flex;
         max-width: 614px;
         height: 100%;
-        max-height: 356px;
+        /* max-height: 356px; */
         padding: 32px;
+    }
+
+    .him-item{
+      margin-left: 17px;
     }
 
 }
 
 @media screen and (min-width: 1200px) {
     
-  .him{
-      
-  }
+
 
   .him-content-block {
       flex-direction: unset;
@@ -169,7 +196,20 @@
         max-width: 600px;
         height: 100%;
         max-height: 400px;
+        border-radius: 15px;
+        background-image: ;
+
     }
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .him-video {
+            background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url('../img/how-its-made/vid-cover-desctop@2x.jpg');
+          }
+        }
 
     .him-list {
     
@@ -190,10 +230,12 @@
 
     .him-subtitle{
   
-      text-align: left;
+      
       width: 100%;
       max-width: 350px;
       
     }
+
+        
 
 }
