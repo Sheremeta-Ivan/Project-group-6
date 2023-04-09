@@ -6,7 +6,10 @@
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-dur-bezier),
+    visibility var(--transition-dur-bezier);
 }
+
 .subscribe-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -30,10 +33,20 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border-color: transparent;
   padding: 0;
   background-color: transparent;
   color: var(--white-color);
+  transition: color var(--transition-dur-bezier);
+  background-color: var(--transition-dur-bezier);
+}
+.modal-subscribe-close-btn:hover,
+.modal-subscribe-close-btn:focus {
+  color: var(--orange-color);
+  background-color: var(--button-hover);
 }
 .subscribe-wrap {
   padding-left: 24px;
@@ -65,8 +78,8 @@
   margin-bottom: 32px;
 }
 .subscribe-modal-form-input {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 25px;
@@ -116,17 +129,19 @@
     top: 24px;
     right: 24px;
   }
+
   .subscribe-wrap {
     padding-left: 40px;
     padding-right: 40px;
   }
   .title-wrap {
+    width: 298px;
     height: 56px;
     margin-top: 40px;
     margin-bottom: 28px;
   }
   .title-wrap h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
   .subscribe-submit {
     gap: 8px;
