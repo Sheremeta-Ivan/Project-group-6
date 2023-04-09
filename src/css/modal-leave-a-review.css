@@ -205,6 +205,23 @@ body {
 
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  .button-submit__modal-leave-a-review:disabled {
+    background: #fd9222;
+    border-radius: 100px;
+    border: none;
+
+    width: 93px;
+    height: 41px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: var(--white-color);
+
+    cursor: not-allowed;
+  }
   .button-close__modal-leave-a-review {
     display: flex;
     align-items: center;
@@ -219,6 +236,12 @@ body {
     fill: #000;
     background-color: var(--bg-main-color);
     border: none;
+
+    padding: 0;
+  }
+  .button-close-x {
+    width: 24px;
+    height: 24px;
   }
 
   .button-close__modal-leave-a-review:hover {
@@ -273,6 +296,9 @@ body {
   .button-close__modal-leave-a-review {
     top: 24px;
     right: 24px;
+
+    width: 28px;
+    height: 28px;
   }
 
   .form-input__modal-leave-a-review {
@@ -315,11 +341,19 @@ body {
   }
   .icon-phone-code {
     left: 24px;
+
+    width: 28px;
+    height: 28px;
   }
 
   .button-submit__modal-leave-a-review {
     width: 117px;
     height: 45px;
+  }
+
+  .button-close-x {
+    width: 28px;
+    height: 28px;
   }
 }
 
@@ -337,5 +371,10 @@ body {
   textarea.form-input__modal-leave-a-review {
     max-height: 136px;
     height: 100%;
+  }
+
+  .icon-phone-code {
+    width: 32px;
+    height: 32px;
   }
 }
