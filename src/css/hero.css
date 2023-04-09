@@ -30,6 +30,11 @@
     background-size: cover;
   }
 }
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
 .hero-container {
   max-width: 244px;
   padding: 0 20px 0 16px;
@@ -74,12 +79,11 @@
 }
 .hero-buy-now {
   background-color: var(--orange-color);
-  margin: 32px;
+  margin-bottom: 32px;
 }
 .hero-how-its-made {
   background-color: transparent;
   border: 1px solid var(--white-color);
-  margin-left: 14px;
 }
 .hero-scroll-down {
   font-weight: 500;
@@ -139,11 +143,17 @@
     margin-right: auto;
     max-width: 335px;
   }
+  .hero-list {
+    flex-direction: row;
+  }
   .hero-container {
-    max-width: 325px;
+    max-width: 335px;
   }
   .hero-buy-now {
     margin: 0;
+  }
+  .hero-how-its-made {
+    margin-left: 14px;
   }
 }
 @media screen and (min-width: 768px) {
