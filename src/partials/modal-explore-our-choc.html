@@ -1,28 +1,58 @@
-<!-- <div class="backdrop is-hidden" data-modal>
-  <div class="modal-explore-our-choc">
+<div class="subscribe-backdrop is-hidden" data-modal-subscribe>
+  <div class="modal-subscribe">
     <button
       type="button"
-      class="modal-explore-our-choc-close-btn"
-      data-modal-close
+      class="modal-subscribe-close-btn"
+      data-modal-subscribe-close
     >
-      <svg class="modal-explore-our-choc-close-btn-icon" width="14" height="14">
-        <use href=""></use>
+      <svg class="modal-subscribe-close-btn-icon" width="24" height="24">
+        <use href="/img/sprite.svg#icon-x-close"></use>
       </svg>
     </button>
-    <h2>EXPLORE OUR <span>NEW CHOCOLATE</span> FIRST!</h2>
+
     <form class="subscribe-modal-form">
-      <input
-        type="email"
-        name="user_email"
-        class="subscribe-modal-form-input"
-        placeholder="Enter your e-mail"
-      />
-      <button type="submit" class="subscribe-submit">
-        Submit
-        <svg class="subscribe-icon" width="" height="">
-          <use href=""></use>
-        </svg>
-      </button>
+      <div class="thumb">
+        <picture>
+          <source
+            srcset="
+              /img/modal-explore-our-choc/popup-subscribe-tablet-desktop.jpg    1x,
+              /img/modal-explore-our-choc/popup-subscribe-tablet-desktop-2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+            sizes="538"
+            type="image/jpg"
+          />
+          <img
+            src="/img/modal-explore-our-choc/popup-subscribe-mobile.jpg"
+            alt="Broken chocolate"
+          />
+        </picture>
+      </div>
+      <div class="subscribe-wrap">
+        <div class="title-wrap">
+          <h2 class="subscribe-modal-title">EXPLORE OUR</h2>
+          <h2>
+            <span class="subscribe-modal-title-accent">NEW CHOCOLATE</span>
+            FIRST!
+          </h2>
+        </div>
+        <div class="subscribe-submit">
+          <input
+            type="email"
+            name="user_email"
+            class="subscribe-modal-form-input"
+            placeholder="Enter your email"
+            required
+          />
+          <button
+            type="submit"
+            class="subscribe-modal-submit"
+            data-modal-subscribe-close
+          >
+            Submit
+          </button>
+        </div>
+      </div>
     </form>
   </div>
-</div> -->
+</div>
