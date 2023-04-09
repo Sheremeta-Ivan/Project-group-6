@@ -150,5 +150,7 @@ color: var(--white-color);
   }
 }
 @media screen and (min-width: 320px){
-  
+  .container{
+   
+  }
 }
