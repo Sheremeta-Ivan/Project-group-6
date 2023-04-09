@@ -35,9 +35,6 @@ margin-right: 4px;
 
 
 @media screen and (min-width: 375px) {
-    .container {
-        width: 365px;
-    }
 
      .header-container {
        padding-top: 17px;
@@ -47,6 +44,8 @@ margin-right: 4px;
     .header-social-list,
     .header-list-anchor {
         display: none;
+        
+
     }
 
     .header-mobile-button-burger {
@@ -63,9 +62,6 @@ margin-right: 4px;
 /* =========================tablet header========================= */
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 734px;
-    }
 
      .header-container {
        padding-top: 24px;
@@ -113,9 +109,6 @@ margin-right: 4px;
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-            width: 1166px;
-        }
 
          .header-logo-svg {
         width: 24px;
@@ -139,8 +132,13 @@ margin-right: 4px;
 .header-list-anchor,
 .header-social-list {
     display: flex;
+   
 }
 
+.header-link-anchor,
+.header-logo {
+transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
   .header-link-anchor:hover,
   .header-link-anchor:focus,
   .header-logo:hover,
@@ -148,6 +146,9 @@ margin-right: 4px;
       filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
   }
 
+  .header-social-link {
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
 .header-social-link:hover,
 .header-social-link:focus{

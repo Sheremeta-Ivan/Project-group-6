@@ -8,8 +8,11 @@
 
 <div class="backdrop__modal-leave-a-review is_hidden" >
   <div class="modal-leave-a-review">
-    <h1 class="title__modal-leave-a-review">
+    <h1 class="title-mobile__modal-leave-a-review">
       leave a review &nbsp; about <span>our chocolate</span>
+    </h1>
+    <h1 class="title-tablet__modal-leave-a-review">
+      leave a review about <span>our chocolate</span>
     </h1>
     <form class="form__modal-leave-a-review" autocomplete="on">
       <input
@@ -26,18 +29,25 @@
         placeholder="Email"
       />
 
-      <input
-        class="form-input__modal-leave-a-review"
-        type="tel"
-        name="tel"
-        placeholder="Phone number"
-      />
+      <div class="container-phone-code">
+        <svg class="icon-phone-code" width="24" height="18">
+          <use href="../img/sprite.svg#icon-flag-of-ukraine"></use>
+        </svg>
+        <label class="label-phone-code" for="tel">+380</label>
+        <input
+          class="form-input__modal-leave-a-review phone-code"
+          type="tel"
+          name="tel"
+          id="tel"
+          placeholder="Phone number"
+        />
+      </div>
 
       <textarea
         class="form-input__modal-leave-a-review"
         name="comment"
         id="comment"
-        rows="5"
+        rows="3"
         placeholder="Enter text"
       ></textarea>
 

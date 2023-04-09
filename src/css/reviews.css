@@ -1,18 +1,17 @@
 @import 'swiper/css/bundle';
 .slider {
   background-color: var(--bg-main-color);
-  padding-top: 128px;
-  padding-bottom: 128px;
+  margin-bottom: 128px;
 }
 .slider-container {
-  width: 100%;
+  /* width: 100%; */
+  overflow: hidden;
   /* width: 1136px; */
 }
 
 .slider-title {
   font-weight: 600;
   font-size: 24px;
-  /* line-height: 1.17px; */
   text-align: center;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -35,7 +34,7 @@
   z-index: 10;
   background-color: var(--white-color);
   width: 360px;
-  /* height: 200px; */
+  height: 200px;
   border: 1px solid rgba(17, 17, 17, 0.1);
   box-shadow: 0px 9.04932px 26.5717px rgba(215, 228, 249, 0.25);
   border-radius: 15px;
@@ -62,7 +61,9 @@
   text-align: center;
   color: var(--black-color);
 }
-
+.swiper {
+  overflow: visible;
+}
 .slider-item-text {
   font-weight: 400;
   font-size: 14px;
