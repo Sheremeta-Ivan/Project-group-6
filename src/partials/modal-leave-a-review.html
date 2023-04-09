@@ -1,12 +1,8 @@
-<button
-  class="button-open__modal-leave-a-review"
-  type="button"
-  data-modal-leave-a-review-open-first
->
+<!-- <button class="button-open__modal-leave-a-review" type="button">
   Leave a review
-</button>
+</button> -->
 
-<div class="backdrop__modal-leave-a-review is_hidden" >
+<div class="backdrop__modal-leave-a-review is_hidden" data-modal-leave-a-review>
   <div class="modal-leave-a-review">
     <h1 class="title-mobile__modal-leave-a-review">
       leave a review &nbsp; about <span>our chocolate</span>
@@ -20,6 +16,7 @@
         type="text"
         name="username"
         placeholder="Name"
+        pattern="[a-zA-Zа-яА-ЯІіЇїЄєҐґ'-]+"
       />
 
       <input
@@ -27,6 +24,7 @@
         type="email"
         name="email"
         placeholder="Email"
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
       />
 
       <div class="container-phone-code">
@@ -40,6 +38,7 @@
           name="tel"
           id="tel"
           placeholder="Phone number"
+          pattern="\d{9}"
         />
       </div>
 
@@ -47,7 +46,7 @@
         class="form-input__modal-leave-a-review"
         name="comment"
         id="comment"
-        rows="3"
+        rows="5"
         placeholder="Enter text"
       ></textarea>
 
@@ -59,7 +58,7 @@
     <button
       type="button"
       class="button-close__modal-leave-a-review"
-
+      data-modal-leave-a-review-close
     >
       <svg width="24" height="24">
         <use href="./img/sprite.svg#icon-close-modal"></use>
