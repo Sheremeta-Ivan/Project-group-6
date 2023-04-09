@@ -21,13 +21,27 @@
 
 .him-content-block {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
-.him-video {
+.him-video[poster]{
+  object-fit: cover;
+  
 }
 
-.him-block-list {
+.him-video {
+      display: block;
+        max-width: 100%;
+        border-radius: 15px;
+      
+}
+
+
+
+
+
+.him-list {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -49,7 +63,13 @@
 }
 
 .him-list {
-  list-style: initial;
+  list-style-image: url(../img/how-its-made/Ellipse.png);
+  list-style-position: outside;
+  padding-right: 8px;
+}
+
+.him-list .himsub-item{
+  list-style: none;
 }
 
 .him-item {
@@ -65,45 +85,48 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2em;
+  
   color: var(--black-color);
 }
 
 @media screen and (min-width: 375px) {
-    .container {
-        width: 365px;
-    }
+   
     
 
         .him-content-block {
             width: 100%;
-            align-items: center;
             flex-direction: column;
             gap: 20px;
         }
 
+   
 
     .him-video{
         display: block;
-        width: 100%;
-        max-width: 355px;
-        height: 100%;
-        max-height: 500px;
+        
+        width: 355px;
+      
+        height: 500px;
     }
 
-        .him-block-list {
+
+        .him-list {
             display: flex;
+            align-items: flex-start;
             width: 100%;
-            min-width: 355px;
-            padding: 20px 14px;
+            max-width: 355px;
+            padding: 20px 14px ;
         }
 
-        
+                .him-subtitle {
+                  text-align: left;
+                  width: 100%;
+                  max-width: 350px;
+                }
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 734px;
-    }
+    
 
         .him-content-block {
             align-items: center;
@@ -119,7 +142,7 @@
         max-height: 400px;
     }
 
-    .him-block-list{
+    .him-list{
         display: flex;
         max-width: 614px;
         height: 100%;
@@ -130,9 +153,10 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-        width: 1166px;
-    }
+    
+  .him{
+      
+  }
 
   .him-content-block {
       flex-direction: unset;
@@ -147,18 +171,29 @@
         max-height: 400px;
     }
 
-    .him-block-list {
+    .him-list {
+    
     display: flex;
-    align-items: center;
+   
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     max-width: 516px;
     height: 100%;
     max-height: 400px;
     
-    padding: 32px 64px 34px 32px;
+    padding: 32px 48px 32px 34px;
     
     background-color: var(--white-color);
     border-radius: 15px;
     }
+
+    .him-subtitle{
+  
+      text-align: left;
+      width: 100%;
+      max-width: 350px;
+      
+    }
+
 }
