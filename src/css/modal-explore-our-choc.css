@@ -42,6 +42,7 @@
   color: var(--white-color);
   transition: color var(--transition-dur-bezier);
   background-color: var(--transition-dur-bezier);
+  z-index: 100;
 }
 .modal-subscribe-close-btn:hover,
 .modal-subscribe-close-btn:focus {
@@ -119,9 +120,6 @@
   background-color: var(--button-hover);
 }
 @media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
-  }
   .modal-subscribe {
     width: 538px;
   }
