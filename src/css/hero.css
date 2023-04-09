@@ -1,5 +1,5 @@
 .hero {
-  max-width: 280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
   color: var(--white-color);
   max-width: 299px;
   margin-bottom: 32px;
-  animation: 8s anim-description ease-out;
+  animation: 3s anim-description ease-out;
 }
 @keyframes anim-description {
   0% {
