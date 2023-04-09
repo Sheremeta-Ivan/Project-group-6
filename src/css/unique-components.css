@@ -1,22 +1,3 @@
-:root {
-    --black-color: #111111;
-    --brown-color: #1e1823;
-    --orange-color: #fd9222;
-    --white-color: #ffffff;
-    --button-hover: #fcf1e0;
-    --bg-main-color: #fafafa;
-  }
-  body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--bg-main-color);
-  }
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-    outline: 1px solid tomato;
-    width: 100%;
-    margin: 0 auto;
-  }
   .unique-headine-link{
    color: var(--orange-color);
   }
@@ -301,7 +282,7 @@ color: var(--black-color);
     padding-top: 32px;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     position: relative;
 }
 .unique-components-item-first{
@@ -315,9 +296,6 @@ color: var(--black-color);
   }
 }
   @media screen and (min-width: 768px) {
-    .container {
-      width: 734px;
-    }
     .unique-components-set{
         padding-top: 0;
         flex-basis:calc((100% - 32px) /2);
