@@ -33,6 +33,11 @@ margin-right: 4px;
     margin-top: auto;
   }
 
+      .header-mobile-button-burger {
+        width: 28px;
+        height: 28px;
+    }
+
 
 @media screen and (min-width: 375px) {
 
@@ -46,11 +51,6 @@ margin-right: 4px;
         display: none;
         
 
-    }
-
-    .header-mobile-button-burger {
-        width: 28px;
-        height: 28px;
     }
 
     .header-logo-svg {
