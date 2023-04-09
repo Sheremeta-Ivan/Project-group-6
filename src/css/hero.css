@@ -1,5 +1,5 @@
 .hero {
-  max-width: 280px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -30,6 +30,11 @@
     background-size: cover;
   }
 }
+.hero-list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
 .hero-container {
   max-width: 244px;
   padding: 0 20px 0 16px;
@@ -42,7 +47,7 @@
   color: var(--white-color);
   max-width: 299px;
   margin-bottom: 32px;
-  animation: 8s anim-description ease-out;
+  animation: 3s anim-description ease-out;
 }
 @keyframes anim-description {
   0% {
@@ -74,12 +79,13 @@
 }
 .hero-buy-now {
   background-color: var(--orange-color);
-  margin: 32px;
+  margin-bottom: 32px;
+  transition: var(--transition-dur-bezier);
 }
 .hero-how-its-made {
   background-color: transparent;
   border: 1px solid var(--white-color);
-  margin-left: 14px;
+  transition: var(--transition-dur-bezier);
 }
 .hero-scroll-down {
   font-weight: 500;
@@ -93,6 +99,7 @@
   align-items: center;
   gap: 14px;
   font-family: inherit;
+  transition: var(--transition-dur-bezier);
 }
 .hero-link-icon {
   display: block;
@@ -105,9 +112,11 @@
   align-items: center;
   background-repeat: no-repeat;
   color: var(--orange-color);
+  transition: var(--transition-dur-bezier);
 }
 .hero-link-icon:is(:hover, :focus) {
   color: var(--white-color);
+  background-color: var(--orange-color);
 }
 .hero-icon {
   fill: currentColor;
@@ -128,10 +137,6 @@
 .hero-scroll-down:focus {
   color: var(--orange-color);
 }
-.hero-link-icon:hover,
-.hero-link-icon:focus {
-  background-color: var(--orange-color);
-}
 
 @media screen and (min-width: 375px) {
   .hero {
@@ -139,11 +144,17 @@
     margin-right: auto;
     max-width: 335px;
   }
+  .hero-list {
+    flex-direction: row;
+  }
   .hero-container {
-    max-width: 325px;
+    max-width: 335px;
   }
   .hero-buy-now {
     margin: 0;
+  }
+  .hero-how-its-made {
+    margin-left: 14px;
   }
 }
 @media screen and (min-width: 768px) {

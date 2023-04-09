@@ -43,12 +43,16 @@
   line-height: 1.2;
   border: none;
   border-radius: 100px;
+  transition: color var(--transition-dur-bezier),
+    background-color var(--transition-dur-bezier);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  color: var(--orange-color);
+  background-color: var(--button-hover);
 }
 /* -------------------TABLET----------------------- */
 @media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
-  }
   .subscribe {
     padding: 72px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -84,9 +88,6 @@
 }
 /* -------------------DESKTOP----------------------- */
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1166px;
-  }
   .subscribe {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url('/img/subscribe/subcribe-desktop.jpg');
