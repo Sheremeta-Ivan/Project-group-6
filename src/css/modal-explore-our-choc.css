@@ -7,11 +7,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
 }
-/* .subscribe-backdrop.is-hidden {
+.subscribe-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 .modal-subscribe {
   position: absolute;
   top: 50%;
@@ -72,6 +72,11 @@
   border-radius: 25px;
   color: var(--black-color);
   background-color: transparent;
+  transition: border-color var(--transition-dur-bezier);
+}
+.subscribe-modal-form-input:hover,
+.subscribe-modal-form-input:focus {
+  border-color: var(--orange-color);
 }
 .subscribe-modal-form-input::placeholder {
   font-weight: 400;
@@ -93,6 +98,12 @@
   padding: 14px 22px;
   border-radius: 100px;
   border: none;
+  transition: background-color var(--transition-dur-bezier);
+}
+.subscribe-modal-submit:hover,
+.subscribe-modal-submit:focus {
+  color: var(--orange-color);
+  background-color: var(--button-hover);
 }
 @media screen and (min-width: 768px) {
   .container {

@@ -43,6 +43,13 @@
   line-height: 1.2;
   border: none;
   border-radius: 100px;
+  transition: color var(--transition-dur-bezier),
+    background-color var(--transition-dur-bezier);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  color: var(--orange-color);
+  background-color: var(--button-hover);
 }
 /* -------------------TABLET----------------------- */
 @media screen and (min-width: 768px) {
