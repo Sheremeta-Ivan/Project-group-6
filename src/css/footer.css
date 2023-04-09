@@ -109,7 +109,7 @@ color: var(--white-color);
     margin-bottom: 50px;
   }
   .footer-list-link{
-  
+
   }
   .footer-text-first{
     margin-bottom: 0;
@@ -129,14 +129,14 @@ color: var(--white-color);
   .footer-navigation{
     padding-top: 24px;
   }
- 
+
 .line-4{
   bottom: 24px;
 }
 .footer-list{
   gap:24px;
   flex-direction: row;
-  
+
 }
 
 }
@@ -146,10 +146,5 @@ color: var(--white-color);
   }
   .footer-top-wrap {
     gap: 64px;
-  }
-}
-@media screen and (min-width: 320px){
-  .container{
-   
   }
 }
