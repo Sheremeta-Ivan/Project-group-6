@@ -31,9 +31,6 @@ color: var(--white-color);
   gap: 32px;
   margin-bottom: 32px;
 }
-.block{
-  /* padding-right: 124px; */
-}
 .footer-top-wrap {
     color: var(--white-color);
     display: flex;
@@ -58,12 +55,8 @@ color: var(--white-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding-bottom: 4px;
   }
-  .footer-contact-list-mob-em{
-
-  }
-
   .footer-list-icon{
-    transition: color var(--transition-dur-bezier);
+    transition: fill var(--transition-dur-bezier);
     display: flex;
     height: 100%;
     fill: var(--white-color);
@@ -100,16 +93,10 @@ color: var(--white-color);
   color: var(--orange-color);
 }
 @media screen and (min-width: 768px){
-  .footer-top-wrap {
-    /* gap: 50px; */
-  }
   .section-first{
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 50px;
-  }
-  .footer-list-link{
-
   }
   .footer-text-first{
     margin-bottom: 0;
