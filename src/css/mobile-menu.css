@@ -10,8 +10,9 @@
     background-color: var(--brown-color);
     z-index: 2;
     overflow-y: auto;
-    
+   
 }
+
 
 .mob-menu-container {
     display: flex;
@@ -121,4 +122,10 @@
     background-color: var(--orange-color);
     border-radius: 1px;
     color: var(--orange-color);
+}
+
+@media screen and (min-width: 768px) {
+    .mob-menu{
+        width: 290px;
+    }
 }

@@ -1,1 +1,61 @@
-<button class="buy-now-button" type="button" data-modal-open>Buy now</button>
+<section class="topsell-section" id="top-sellers-anchor">
+  <div class="container">
+    <h2 class="topsell-title-section">
+      <span class="topsell-title-accent">Top</span> Sellers
+    </h2>
+    <ul class="topsell-list-images">
+      <li>
+        <img
+          class="topsells-image"
+          srcset="
+            ./img/top-sellers/topsellers-choco-nut.jpg    1x,
+            ./img/top-sellers/topsellers-choco-nut@2x.jpg 2x
+          "
+          srs="./img/top-sellers/topsellers-choco-nut.jpg"
+          alt="topsellers-choco-nut"
+        />
+        <p class="topsell-text-mob">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </li>
+      <li>
+        <img
+          class="topsells-image"
+          srcset="
+            ./img/top-sellers/topsellers-choco-mint.jpg    1x,
+            ./img/top-sellers/topsellers-choco-mint@2x.jpg 2x
+          "
+          src="./img/top-sellers/topsellers-choco-mint.jpg"
+          alt="topsellers-choco-mint"
+        />
+      </li>
+      <li class="topsell-list-img-none">
+        <!-- This img is used only on the desktop version. 
+        It will be hidden by css on tablet and mobile version -->
+        <img
+          srcset="
+            ./img/top-sellers/topsellers-choco-candy.jpg    1x,
+            ./img/top-sellers/topsellers-choco-candy@2x.jpg 2x
+          "
+          src="./img/top-sellers/topsellers-choco-candy.jpg"
+          class="topsells-image"
+          alt="topsellers-choco-candy"
+        />
+      </li>
+    </ul>
+    <div class="topsell-description-flex">
+      <div class="topsell-description-item">
+        <p class="topsell-text">
+          Crazy enough chocolate originates from a bean just like the coffee
+          bean called Cacao. Cacao has been around for thousands of years and
+          was first discovered by the Native American tribe called the Mayans.
+        </p>
+      </div>
+      <button class="buy-now-button" type="button" data-modal-open>
+        Buy now
+      </button>
+    </div>
+  </div>
+</section>
