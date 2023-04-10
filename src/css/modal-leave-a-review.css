@@ -55,7 +55,6 @@ body {
     background-color: var(--bg-main-color);
 
     transform: translate(-50%, -50%);
-
     overflow-y: hidden;
     overflow-x: hidden;
 
@@ -261,6 +260,8 @@ body {
   .modal-leave-a-review {
     max-width: 516px;
     max-height: 576px;
+
+    overflow-y: auto;
   }
 
   .form__modal-leave-a-review {
