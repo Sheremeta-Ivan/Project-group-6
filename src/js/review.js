@@ -9,9 +9,9 @@ const swiper = new Swiper('.swiper', {
     el: '.slider-pagination',
     clickable: true,
   },
-  mousewheel: {
-    sensitivity: 1,
-  },
+  // mousewheel: {
+  //   sensitivity: 1,
+  // },
   loopedSlides: 3,
   speed: 800,
   //   effect: 'cube',

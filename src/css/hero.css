@@ -36,7 +36,7 @@
   margin-bottom: 32px;
 }
 .hero-container {
-  max-width: 244px;
+  width: 100%;
   padding: 0 20px 0 16px;
 }
 .hero-description {
@@ -65,6 +65,11 @@
     transform: translateX(0%);
   }
 }
+.hero-buy-now:active,
+.hero-how-its-made:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .hero-btn {
   font-family: inherit;
@@ -85,6 +90,7 @@
 .hero-how-its-made {
   background-color: transparent;
   border: 1px solid var(--white-color);
+  text-align: center;
   transition: var(--transition-dur-bezier);
 }
 .hero-scroll-down {
