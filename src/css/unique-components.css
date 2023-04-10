@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   .unique-headine-link{
    color: var(--orange-color);
   }
@@ -41,7 +42,49 @@
     border-radius: 15px;
   }
 =======
+.unique-headine-link {
   color: var(--orange-color);
+}
+.unique-components-set {
+  display: flex;
+  gap: 19px;
+  padding-bottom: 128px;
+}
+.unique-components-title-one {
+  width: 128px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-top: 36px;
+  color: var(--white-color);
+  margin-left: 28px;
+}
+.unique-components-title-two {
+  width: 128px;
+  height: 18px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin-top: 36px;
+  color: var(--black-color);
+  margin-left: 28px;
+}
+.unique-components-item-first {
+  width: 270px;
+  height: 270px;
+  background: var(--orange-color);
+  border-radius: 15px;
+}
+>>>>>>> main
 
   .unique-components-item-first:hover .thumb{
     transform: translate(0,0);
@@ -179,6 +222,7 @@
     align-items: center;
     position: relative;
 }
+<<<<<<< HEAD
     .unique-components-item-wrapper{
     width: 335px;
     height: 270px;
@@ -192,6 +236,14 @@
 }
   @media screen and (min-width: 768px) {
     .unique-components-headline{
+=======
+@media screen and (min-width: 768px) {
+  .unique-components-set {
+    padding-top: 0;
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .unique-components-headline {
+>>>>>>> main
     margin: auto;
     width: 411px;
     height: 56px;
