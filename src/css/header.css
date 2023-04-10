@@ -136,7 +136,7 @@ letter-spacing: 0.3px;
 
 .header-link-anchor,
 .header-logo {
-transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: filter var(--transition-dur-bezier), color var(--transition-dur-bezier);
 }
   
   .header-logo:hover,
@@ -145,7 +145,7 @@ transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(
   }
 
   .header-social-link {
-    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: filter var(--transition-dur-bezier), fill var(--transition-dur-bezier);
   }
 
 
