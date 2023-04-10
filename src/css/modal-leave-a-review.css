@@ -11,8 +11,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--bg-main-color);
 }
-
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
+  /*  */
   .button-open__modal-leave-a-review {
     width: 165px;
     height: 41px;
