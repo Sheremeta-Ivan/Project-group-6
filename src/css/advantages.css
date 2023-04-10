@@ -3,6 +3,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--brown-color);
+  margin-bottom: 72px;
 }
 
 .visually-hidden {
@@ -24,10 +25,16 @@
   .advantages-containeer {
     padding: 50px 0px;
   }
+  .advantages {
+    margin-bottom: 100px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .advantages-containeer {
     padding: 50px 18px 50px 18px;
+  }
+  .advantages {
+    margin-bottom: 128px;
   }
 }
 .advantages-list {
