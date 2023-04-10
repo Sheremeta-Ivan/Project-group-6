@@ -40,6 +40,8 @@
     background: var(--orange-color);
     border-radius: 15px;
   }
+=======
+  color: var(--orange-color);
 
   .unique-components-item-first:hover .thumb{
     transform: translate(0,0);
