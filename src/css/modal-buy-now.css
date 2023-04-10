@@ -161,8 +161,6 @@
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -172,8 +170,6 @@
 }
 
 .buy-now-modal-form-input::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -247,8 +243,6 @@
   border-radius: 8px;
   box-sizing: border-box;
   margin: 8px 0 18px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -258,8 +252,6 @@
 }
 
 .buy-now-modal-form-message::placeholder {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
@@ -280,8 +272,6 @@
   width: 109px;
   background: var(--orange-color);
   border-radius: 100px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.2;
@@ -362,6 +352,7 @@
 
   .buy-now-modal-form-input::placeholder {
     font-size: 18px;
+    font-weight: 400;
     line-height: 1.22;
     letter-spacing: -0.02em;
     color: rgba(64, 64, 64, 0.3);
