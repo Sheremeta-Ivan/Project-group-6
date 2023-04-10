@@ -1,16 +1,3 @@
-:root {
-  --black-color: #111111;
-  --brown-color: #1e1823;
-  --orange-color: #fd9222;
-  --white-color: #ffffff;
-  --button-hover: #fcf1e0;
-  --bg-main-color: #fafafa;
-}
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: var(--bg-main-color);
-}
 @media screen and (min-width: 320px) {
   /*  */
   .button-open__modal-leave-a-review {
