@@ -8,3 +8,4 @@ import './modal-buy-now-click.js';
 import './modal-subscribe.js';
 import './mobile-menu.js';
 import './slowly-scroll.js';
+import './nav-link-mob-menu.js';
