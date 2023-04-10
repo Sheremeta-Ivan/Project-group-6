@@ -9,7 +9,6 @@
   transition: opacity var(--transition-dur-bezier),
     visibility var(--transition-dur-bezier);
 }
-
 .subscribe-backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -19,6 +18,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 311px;
   transform: translate(-50%, -50%);
   border-radius: 15px;
   background: var(--bg-main-color);
@@ -27,7 +27,6 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   overflow: hidden;
-  border: none;
 }
 .modal-subscribe-close-btn {
   position: absolute;
@@ -39,15 +38,13 @@
   border-color: transparent;
   padding: 0;
   background-color: transparent;
-  color: var(--white-color);
+  fill: var(--white-color);
   transition: color var(--transition-dur-bezier);
-  background-color: var(--transition-dur-bezier);
   z-index: 100;
 }
 .modal-subscribe-close-btn:hover,
 .modal-subscribe-close-btn:focus {
-  color: var(--orange-color);
-  background-color: var(--button-hover);
+  fill: var(--orange-color);
 }
 .subscribe-wrap {
   padding-left: 24px;
@@ -79,8 +76,8 @@
   margin-bottom: 32px;
 }
 .subscribe-modal-form-input {
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   padding-left: 18px;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   border-radius: 25px;
@@ -90,6 +87,7 @@
 }
 .subscribe-modal-form-input:hover,
 .subscribe-modal-form-input:focus {
+  outline: none;
   border-color: var(--orange-color);
 }
 .subscribe-modal-form-input::placeholder {
@@ -99,6 +97,7 @@
   text-align: left;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
+  border-color: var(--orange-color);
 }
 .subscribe-modal-submit {
   position: absolute;
@@ -111,7 +110,7 @@
   background-color: var(--orange-color);
   padding: 14px 22px;
   border-radius: 100px;
-  border: none;
+  border-color: transparent;
   transition: background-color var(--transition-dur-bezier);
 }
 .subscribe-modal-submit:hover,
@@ -126,8 +125,13 @@
   .modal-subscribe-close-btn {
     top: 24px;
     right: 24px;
+    border: transparent;
+    transition: background-color var(--transition-dur-bezier);
   }
-
+  .modal-subscribe-close-btn:hover,
+  .modal-subscribe-close-btn:focus {
+    background-color: var(--button-hover);
+  }
   .subscribe-wrap {
     padding-left: 40px;
     padding-right: 40px;
@@ -146,9 +150,9 @@
   }
   .subscribe-modal-form-input {
     width: 313px;
-    /* padding-top: 15px;
-    padding-bottom: 15px; */
-    /* padding-left: 24px; */
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
   }
   .subscribe-modal-form-input::placeholder {
     font-size: 18px;
