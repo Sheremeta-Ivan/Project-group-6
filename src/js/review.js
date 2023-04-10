@@ -21,15 +21,18 @@ const swiper = new Swiper('.swiper', {
   //     shadowOffset: 10,
   //     shadowScale: 0.94,
   //   },
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 30,
-  //   },
-  //   // when window width is >= 640px
-  //   1200: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 40,
-  //   },
-  // },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    // when window width is >= 640px
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 28,
+    },
+  },
 });

@@ -20,6 +20,7 @@ html {
 .header-logo-part {
 Font-style: italic;
 margin-right: 4px;
+letter-spacing: 0.3px;
 }
 
   .header-mobile-button {
@@ -33,39 +34,35 @@ margin-right: 4px;
     margin-top: auto;
   }
 
-
-@media screen and (min-width: 375px) {
-    .container {
-        width: 365px;
-    }
-
-     .header-container {
-       padding-top: 17px;
-       padding-bottom: 17px;
-    }
-
-    .header-social-list,
-    .header-list-anchor {
-        display: none;
-    }
-
-    .header-mobile-button-burger {
+      .header-mobile-button-burger {
         width: 28px;
         height: 28px;
     }
 
-    .header-logo-svg {
+       .header-social-list,
+    .header-list-anchor {
+        display: none;
+        
+    }
+
+        .header-container {
+            justify-content: space-between;
+        }
+
+              .header-logo-svg {
         width: 21px;
         height: 21px;
     }
-}
+
+       .header-container {
+            padding-top: 17px;
+            padding-bottom: 17px;
+        }
+
 
 /* =========================tablet header========================= */
 
 @media screen and (min-width: 768px) {
-    .container {
-        width: 734px;
-    }
 
      .header-container {
        padding-top: 24px;
@@ -104,18 +101,13 @@ margin-right: 4px;
     margin-left: 188px;
 }
 
-.header-container {
-    justify-content: space-between;
-}
+
 
 .header-social-list {
     gap: 18px;
 }
 
 @media screen and (min-width: 1200px) {
-    .container {
-            width: 1166px;
-        }
 
          .header-logo-svg {
         width: 24px;
@@ -139,13 +131,21 @@ margin-right: 4px;
 .header-list-anchor,
 .header-social-list {
     display: flex;
+   
 }
 
-  .header-link-anchor:hover,
-  .header-link-anchor:focus,
+.header-link-anchor,
+.header-logo {
+transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
   .header-logo:hover,
   .header-logo:focus {
       filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .header-social-link {
+    transition: filter 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 
@@ -153,6 +153,12 @@ margin-right: 4px;
 .header-social-link:focus{
 filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
 fill: var(--orange-color);
+}
+
+.header-link-anchor:hover,
+.header-link-anchor:focus {
+    filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+color: var(--orange-color);
 }
 
 }

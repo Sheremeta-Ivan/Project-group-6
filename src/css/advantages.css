@@ -18,21 +18,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-@media screen and (min-width: 375px) {
-  .container {
-    width: 365px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 734px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1166px;
-  }
-}
 .advantages-containeer {
   padding: 20px 0px;
 }
