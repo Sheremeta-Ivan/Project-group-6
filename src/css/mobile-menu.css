@@ -3,8 +3,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 220px;
-
+    width: 40%;
+    min-width: 220px;
     height: 100%;
 
     background-color: var(--brown-color);
@@ -50,6 +50,7 @@
     width: 32px;
     height: 32px;
     fill: var(--white-color);
+    transition: var(--transition-dur-bezier);
 }
 
 
@@ -87,6 +88,7 @@
     font-size: 14px;
     line-height: 1.1em;
     color: var(--white-color);
+    transition: var(--transition-dur-bezier);
 }
 
   .mob-menu-nav-link:hover{
@@ -115,6 +117,7 @@
     width: 22px;
     height: 20px;
     fill: var(--white-color);
+    transition: var(--transition-dur-bezier);
 }
 
 .mob-menu-social-media-link:is(:hover, :focus) .mob-menu-social-media-icon{
