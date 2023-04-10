@@ -9,10 +9,10 @@ const mySwiper = new Swiper('.myswiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
-  mousewheel: {
-    sensitivity: 1,
-  },
-  loopedSlides: 3,
+  // mousewheel: {
+  //   sensitivity: 1,
+  // },
+  loopedSlides: 4,
   speed: 800,
 
 
