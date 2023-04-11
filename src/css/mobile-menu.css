@@ -16,15 +16,12 @@
     transform: translateX(100%);
 
 }
-
 .mob-menu.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(0);
 }
-
-
 .mob-menu-container {
     display: flex;
     align-items: center;
@@ -35,7 +32,6 @@
     padding: 20px;
 
 }
-
 .btn-mob-menu-close {
     position: absolute;
     width: 28px;
@@ -58,19 +54,11 @@
     fill: var(--orange-color);
 }
 
-
-.mob-menu-nav {
-
-}
-
 .mob-menu-nav-list {
     display: flex;
     flex-direction: column;
     margin-top: 136px;
     margin-bottom: auto;
-
-
-
 }
 
 .mob-menu-nav-item:not(:last-child) {
@@ -101,14 +89,6 @@
     margin-right: auto;
     gap: 20px;
 
-
-}
-
-.mob-menu-social-media-item {
-
-}
-
-.mob-menu-social-media-link {
 
 }
 

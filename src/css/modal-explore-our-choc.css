@@ -32,20 +32,26 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  width: 24px;
-  height: 24px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   border-color: transparent;
   padding: 0;
   background-color: transparent;
   fill: var(--white-color);
-  transition: color var(--transition-dur-bezier);
   z-index: 100;
 }
-.modal-subscribe-close-btn:hover,
-.modal-subscribe-close-btn:focus {
+.modal-subscribe-close-btn-icon{
+  padding-top: 2px;
+  width: 28px;
+  height: 28px;
+  transition: fill var(--transition-dur-bezier);
+}
+.modal-subscribe-close-btn:hover .modal-subscribe-close-btn-icon,
+.modal-subscribe-close-btn:focus .modal-subscribe-close-btn-icon{
   fill: var(--orange-color);
 }
+
 .subscribe-wrap {
   padding-left: 24px;
   padding-right: 24px;
