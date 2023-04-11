@@ -92,26 +92,7 @@
   background-color: var(--orange-color);
   color: var(--white-color);
 }
-/* ------ */
 
-/* .slider-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 13px;
-  margin-bottom: 50px;
-}
-
-.slider-pagination .swiper-pagination-bullet {
-  width: 13px;
-  height: 13px;
-  background-color: rgba(17, 17, 17, 0.1);
-  opacity: 1;
-}
-
-.slider-pagination .swiper-pagination-bullet-active {
-  background-color: var(--orange-color);
-} */
 .slider-pagination {
   position: unset;
   display: flex;
@@ -131,6 +112,21 @@
   background: #FD9222;
   flex: none;
   border-radius: 28px / 28px;
+}
+@media screen and (min-width: 375px) {
+  .slider {
+    margin-bottom: 72px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .slider {
+    margin-bottom: 128px;
+  }
 }
 
 

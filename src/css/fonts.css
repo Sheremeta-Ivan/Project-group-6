@@ -34,9 +34,9 @@
 } */
 @font-face {
   font-family: 'MontserratNormal';
-  src: url('../../fonts/Montserrat-VariableFont_wght.ttf');
+  src: url('../fonts/Montserrat-VariableFont_wght.ttf');
 }
 @font-face {
   font-family: 'MontserratItalic';
-  src: url('../../fonts/Montserrat-Italic-VariableFont_wght.ttf');
+  src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf');
 }
