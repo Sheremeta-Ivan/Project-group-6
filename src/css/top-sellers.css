@@ -23,8 +23,19 @@
   justify-content: center;
   gap: 32px;
 }
-
+@media screen and (min-width: 375px) {
+  .topsell-section {
+    margin-bottom: 72px;
+  }
+  .topsells-image {
+    width: 335px;
+    height: 464px;
+  }
+}
 @media screen and (min-width: 768px) {
+  .topsell-section {
+    margin-bottom: 100px;
+  }
   .topsell-list-images {
     flex-direction: row;
     justify-content: space-between;
@@ -49,12 +60,7 @@
   border-radius: 15px;
 }
 
-@media screen and (min-width: 375px) {
-  .topsells-image {
-    width: 335px;
-    height: 464px;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   .topsells-image {
