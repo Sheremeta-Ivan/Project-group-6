@@ -134,10 +134,6 @@
     border: transparent;
     transition: background-color var(--transition-dur-bezier);
   }
-  .modal-subscribe-close-btn:hover,
-  .modal-subscribe-close-btn:focus {
-    background-color: var(--button-hover);
-  }
   .subscribe-wrap {
     padding-left: 40px;
     padding-right: 40px;
