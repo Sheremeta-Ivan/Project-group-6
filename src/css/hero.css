@@ -103,10 +103,7 @@
   color: var(--orange-color);
   transition: var(--transition-dur-bezier);
 }
-.hero-link-icon:is(:hover, :focus) {
-  color: var(--white-color);
-  background-color: var(--orange-color);
-}
+
 .hero-icon {
   fill: currentColor;
 }
@@ -125,6 +122,11 @@
 .hero-scroll-down:hover,
 .hero-scroll-down:focus {
   color: var(--orange-color);
+}
+.hero-scroll-down:hover .hero-link-icon,
+.hero-scroll-down:focus .hero-link-icon {
+  color: var(--white-color);
+  background-color: var(--orange-color);
 }
 
 @media screen and (min-width: 375px) {
