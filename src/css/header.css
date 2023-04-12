@@ -7,6 +7,8 @@
 }
 .header-logo-svg {
   margin-left: 4px;
+  width: 24px;
+  height: 24px;
 }
 
 .header-logo {
@@ -24,6 +26,7 @@
 .header-mobile-button {
   background-color: transparent;
   border: none;
+  
   padding: 0;
   line-height: 0;
 }
@@ -74,6 +77,7 @@
 
 .social-footer-icon {
   width: 24px;
+  height: 24px;
 }
 
 .header-link-anchor {
