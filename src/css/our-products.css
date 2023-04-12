@@ -34,6 +34,7 @@
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   transition: all var(--transition-dur-bezier);
+  cursor: pointer;
 }
 .swiper-item:is(:hover, :focus) {
   border: 1px solid var(--orange-color);
