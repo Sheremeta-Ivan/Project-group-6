@@ -97,7 +97,7 @@
     width: 355px;
 
     height: 500px;
-    background-image: url('../img/how-its-made/vid-cover-mob.jpg');
+    background-image: url('/img/how-its-made/vid-cover-mob.webp');
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -105,7 +105,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .him-video {
-      background-image: url('/img/how-its-made/vid-cover-mob@2x.jpg');
+      background-image: url('/img/how-its-made/vid-cover-mob-2x.webp');
     }
   }
 
@@ -140,7 +140,7 @@
     max-width: 614px;
 
     max-height: 400px;
-    background-image: url('../img/how-its-made/vid-cover-tablet.jpg');
+    background-image: url('/img/how-its-made/vid-cover-tablet.webp');
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -148,7 +148,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .him-video {
-      background-image: url('/img/how-its-made/vid-cover-tablet@2x.jpg');
+      background-image: url('/img/how-its-made/vid-cover-tablet-2x.webp');
     }
   }
 
@@ -181,7 +181,7 @@
 
     max-height: 400px;
     border-radius: 15px;
-    background-image: url('../img/how-its-made/vid-cover-desctop.jpg');
+    background-image: url('/img/how-its-made/vid-cover-desctop.webp');
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -190,7 +190,7 @@
     (min-resolution: 2dppx) {
     .him-video {
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-        url('/img/how-its-made/vid-cover-desctop@2x.jpg');
+        url('/img/how-its-made/vid-cover-desctop-2x.webp');
     }
   }
 
