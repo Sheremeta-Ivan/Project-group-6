@@ -37,7 +37,6 @@
   justify-content: space-between;
 }
 .footer-social {
-  max-width: 164px;
   font-style: normal;
 }
 .footer-contact {
@@ -115,7 +114,9 @@
   .footer-navigation {
     padding-top: 24px;
   }
-
+  .footer-top-wrap{
+    gap: 50px;
+  }
   .line-4 {
     bottom: 24px;
   }
