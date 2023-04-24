@@ -18,3 +18,4 @@ opTEAMization team:
 10.Denys (modal leave a review)
 11.Marianna (subscribe, modal subscribe)
 12.Danyil (footer)
+
