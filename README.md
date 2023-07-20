@@ -6,9 +6,9 @@ Ready website: https://sheremeta-ivan.github.io/Project-group-6/
 
 opTEAMization team:
 
-1.Ivan (team-lead, our-products);
-2.Anastasia (scrum-master, modal buy now);
-3.Arthur (header, mobile menu);
+# 1.Ivan (team-lead, our-products);
+# 2.Anastasia (scrum-master, modal buy now);
+# 3.Arthur (header, mobile menu);
 4.Lyudmila (hero);
 5.Irina (advantages);
 6.Olga (unique components);
